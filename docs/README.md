@@ -1,26 +1,26 @@
-# Experimental SolveSpace build for the Web browser
+# Experimental SolveSpace build for the Web-browser
 
 実験的なWebブラウザ向けSolveSpaceビルド
 
-**Only for test purpose. Not for daily use.**
+SolveSpace is a parametric 2D/3D CAD under the GPL v3 (or later). Windows, macOS, Linux and BSD are supported, and experimental Web-browser support also exists. This page contains that custombuild.
 
-**テスト用です。このビルドは常用するものではありません。**
+SolveSpaceはパラメトリックな2D/3D CADです。GPL v3(もしくはそれ以降)でライセンスされています。Windows, macOS, Linux, BSDがサポートされ、実験的なWebブラウザサポートも存在します。ここには実験的なWebブラウザのカスタムビルドがあります。
 
-**Try it !** : **[Experimental SolveSpace on the Web browser](https://verylowfreq.github.io/experimental-solvespace-on-browser/solvespace.html)**
+**Only for test purpose. Not for daily use. / テスト用です。このビルドは常用するものではありません。**
 
-**Please send me a patch !**: **[Sourcecode and repository on the GitHub](https://github.com/verylowfreq/solvespace/tree/emscripten)**
+**See the knwon issues before trying. / 試す前に既知の問題を確認してください。**
 
+ - Web-browser on Windows: Many functions works. / Windows上のWebブラウザ: 多くの機能が動きます。
+ - Safari on iOS: You can open the app, but with restrictions. / iOS上のSafari: 起動できますが、制約があります。
+ - Chrome on Android: Not tested. You may unable to open the app. / Android上のChrome: テストされていません。起動できないかもしれません。
+
+You cannot open/save file. If you try, then crash. / ファイルを開いたり保存することはできません。試すとクラッシュします。
+
+**＞＞＞ Try it ! : https://verylowfreq.github.io/experimental-solvespace-on-browser/solvespace.html ＜＜＜**
+
+Sourcecode: https://github.com/verylowfreq/solvespace/tree/emscripten
 
 ![Experimental SolveSpace running on Web browser](https://user-images.githubusercontent.com/60875431/182646032-7d90a7ac-01d5-43fd-acf9-e690887ba856.png)
-
-SolveSpace is a parametric 2D/3D CAD under the GPL v3 (or later).
-
-This repository contains the binaries to run on the Web browser; built with Emscripten as an WebAssembly output.
-
-SolveSpaceはパラメトリックな2D/3D CADです。GPL v3(もしくはそれ以降)でライセンスされています。
-
-このレポジトリ（ページ）には、ブラウザで実行するためのバイナリが含まれています。Emscriptenでビルドされ、WebAssemblyで出力されています。
-
 
 ## What's this ? / これはなに？
 
@@ -36,9 +36,7 @@ This build is
  - 最新環境と最新ツールセットでビルドできるように改変しています。
  - masterブランチからコミットをマージしています。
 
-## Problems / 問題点
-
-Known problems:
+## Known issues / 既知の問題点
 
  - Cannot open/save file (Not implemented)
  - You can open with Safari on iOS, but...
@@ -46,10 +44,8 @@ Known problems:
    - Cannot open a menu.
  - Color picker not react to mouse click.
  - Extrude operation often fails (more often than desktop build).
-   - Workaround: Operation will success with Force NURBS option.
+   - Workaround: Use "Force NURBS" option.
  - and more.
-
-既知の問題は、
 
  - ファイルの読み書きができません。(実装されていません。)
  - iOSのSafariで開けますが、
