@@ -10,6 +10,8 @@ SolveSpaceはパラメトリックな2D/3D CADです。GPL v3(もしくはそれ
 
 **See the knwon issues before trying. / 試す前に既知の問題を確認してください。**
 
+Two or three finger touch works as moving camera but may cause crash. / 2本指や3本指のタッチはカメラの移動として機能しますがアプリがクラッシュすることがあります。
+
 **＞＞＞ Try it ! : [https://verylowfreq.github.io/experimental-solvespace-on-browser/bin-2022080801/solvespace.html](https://verylowfreq.github.io/experimental-solvespace-on-browser/bin-2022080801//solvespace.html) ＜＜＜**
 
 Sourcecode: [https://github.com/verylowfreq/solvespace/tree/emscripten-develop](https://github.com/verylowfreq/solvespace/tree/emscripten-develop)
