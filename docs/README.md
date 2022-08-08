@@ -10,9 +10,7 @@ SolveSpaceはパラメトリックな2D/3D CADです。GPL v3(もしくはそれ
 
 **See the knwon issues before trying. / 試す前に既知の問題を確認してください。**
 
-Two or three finger touch works as moving camera but may cause crash. / 2本指や3本指のタッチはカメラの移動として機能しますがアプリがクラッシュすることがあります。
-
-**＞＞＞ Try it ! : [https://verylowfreq.github.io/experimental-solvespace-on-browser/bin-2022080801/solvespace.html](https://verylowfreq.github.io/experimental-solvespace-on-browser/bin-2022080801//solvespace.html) ＜＜＜**
+**＞＞＞ Try it ! : [https://verylowfreq.github.io/experimental-solvespace-on-browser/bin-2022080802/solvespace.html](https://verylowfreq.github.io/experimental-solvespace-on-browser/bin-2022080802/solvespace.html) ＜＜＜**
 
 Sourcecode: [https://github.com/verylowfreq/solvespace/tree/emscripten-develop](https://github.com/verylowfreq/solvespace/tree/emscripten-develop)
 
@@ -46,6 +44,7 @@ This build is
    - ~~Workaround: Use "Force NURBS" option.~~
    - Set "configuration -> chord tolerance" to "0.1" manually. (maybe "0" is set if you encounter this problem.)
    - If this value goes back to "0" on next opening this app, try to clear the data on this site in your Web-browser's settings.
+   - This resolved by fixing setting store/read code.
  - and more.
 
  - ポインターやタッチの位置が少しずれる場合があります。
@@ -58,12 +57,17 @@ This build is
    - ~~回避策: Force NURBSオプションを使用してください。~~
    - "configuration -> chord tolerance" を 0.1 に**手動で**設定してください。（この問題に遭遇した場合、おそらく "0" になっていると思います。）
    - 次回以降の起動時に値が 0 に戻る場合は、ブラウザの設定で、このサイトに関するデータの削除を試してみてください。
+   - 設定値の読み込みと保存について修正したことにより解決。
  - その他たくさん。
 
 
 ## History / 公開履歴
 
- - 2022-08-08
+ - 2022-08-08 02
+   - [https://verylowfreq.github.io/experimental-solvespace-on-browser/bin-2022080802/solvespace.html](https://verylowfreq.github.io/experimental-solvespace-on-browser/bin-2022080802/solvespace.html)
+   - https://github.com/verylowfreq/solvespace/commit/7c85617f91d5632e2462202c6baa991705fce2d8
+   - FIX: Invalid binaries uploaded (File upload/download not included). Crash on touch operations.
+ - 2022-08-08 01
    - [https://verylowfreq.github.io/experimental-solvespace-on-browser/bin-2022080801/solvespace.html](https://verylowfreq.github.io/experimental-solvespace-on-browser/bin-2022080801/solvespace.html)
    - https://github.com/verylowfreq/solvespace/commit/a535ef6c53357272ed4e67bc7ea1f31a1955bb9d
    - ADD: File upload/download. Touch available.
