@@ -10,7 +10,7 @@ SolveSpaceはパラメトリックな2D/3D CADです。GPL v3(もしくはそれ
 
 **See the knwon issues before trying. / 試す前に既知の問題を確認してください。**
 
-**＞＞＞ Try it ! : [https://verylowfreq.github.io/experimental-solvespace-on-browser/bin-2022080802/solvespace.html](https://verylowfreq.github.io/experimental-solvespace-on-browser/bin-2022080802/solvespace.html) ＜＜＜**
+**＞＞＞ Try it ! : [https://verylowfreq.github.io/experimental-solvespace-on-browser/bin-2022080803/solvespace.html](https://verylowfreq.github.io/experimental-solvespace-on-browser/bin-2022080803/solvespace.html) ＜＜＜**
 
 Sourcecode: [https://github.com/verylowfreq/solvespace/tree/emscripten-develop](https://github.com/verylowfreq/solvespace/tree/emscripten-develop)
 
@@ -35,12 +35,15 @@ This build is
 ## Known issues / 既知の問題点
 
  - Pointer and touch position is sometimes misaligned a little.
+ - Main drawning area sometimes misalign.
  - ~~Cannot open/save file (Not implemented)~~
- - You can open with Safari on iOS, but...
+ - You can open with Safari on iOS~~, but...~~
    - ~~Cannot move the camera.~~
-   - Cannot open a menu. Cannot click buttons on some dialog.
+   - ~~Cannot open a menu. Cannot click buttons on some dialog.~~
+ - You can or cannot run on Web browser on Android devices.
+   - Not tested.
  - Color picker not react to mouse click.
- - Extrude operation often fails (more often than desktop build).
+ - Extrude operation often fails ~~(more often than desktop build).~~
    - ~~Workaround: Use "Force NURBS" option.~~
    - Set "configuration -> chord tolerance" to "0.1" manually. (maybe "0" is set if you encounter this problem.)
    - If this value goes back to "0" on next opening this app, try to clear the data on this site in your Web-browser's settings.
@@ -48,10 +51,13 @@ This build is
  - and more.
 
  - ポインターやタッチの位置が少しずれる場合があります。
+ - メインの描画エリアがずれることがあります。
  - ~~ファイルの読み書きができません。(実装されていません。)~~
- - iOSのSafariで開けますが、
+ - iOSのSafariで開けます~~が、~~
    - ~~カメラの移動ができません。~~
    - メニューが開けません。
+ - Androidのブラウザでは動くかもしれないし動かないかもしれません。
+   - テストされていません。
  - カラーピッカーがマウスのクリックに反応しません。
  - 押し出し操作は頻繁に失敗します。
    - ~~回避策: Force NURBSオプションを使用してください。~~
@@ -63,6 +69,10 @@ This build is
 
 ## History / 公開履歴
 
+ - 2022-08-08 03
+   - [https://verylowfreq.github.io/experimental-solvespace-on-browser/bin-2022080803/solvespace.html](https://verylowfreq.github.io/experimental-solvespace-on-browser/bin-2022080803/solvespace.html)
+   - https://github.com/verylowfreq/solvespace/commit/b62c437cc2eb5bb623dbe2d10a7eec2d2fb0c50f
+   - FIX: Click menu and button by touch.
  - 2022-08-08 02
    - [https://verylowfreq.github.io/experimental-solvespace-on-browser/bin-2022080802/solvespace.html](https://verylowfreq.github.io/experimental-solvespace-on-browser/bin-2022080802/solvespace.html)
    - https://github.com/verylowfreq/solvespace/commit/7c85617f91d5632e2462202c6baa991705fce2d8
