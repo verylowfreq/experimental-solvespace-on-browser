@@ -10,7 +10,7 @@ SolveSpaceはパラメトリックな2D/3D CADです。GPL v3(もしくはそれ
 
 **See the knwon issues before trying. / 試す前に既知の問題を確認してください。**
 
-**＞＞＞ Try it ! : [https://verylowfreq.github.io/experimental-solvespace-on-browser/bin-2022080803/solvespace.html](https://verylowfreq.github.io/experimental-solvespace-on-browser/bin-2022080803/solvespace.html) ＜＜＜**
+**＞＞＞ Try it ! : [https://verylowfreq.github.io/experimental-solvespace-on-browser/bin-2022081301/solvespace.html](https://verylowfreq.github.io/experimental-solvespace-on-browser/bin-2022081301/solvespace.html) ＜＜＜**
 
 Sourcecode: [https://github.com/verylowfreq/solvespace/tree/emscripten-develop](https://github.com/verylowfreq/solvespace/tree/emscripten-develop)
 
@@ -34,15 +34,11 @@ This build is
 
 ## Known issues / 既知の問題点
 
- - Pointer and touch position is sometimes misaligned a little.
- - Main drawning area sometimes misalign.
- - ~~Cannot open/save file (Not implemented)~~
- - You can open with Safari on iOS~~, but...~~
-   - ~~Cannot move the camera.~~
-   - ~~Cannot open a menu. Cannot click buttons on some dialog.~~
+ - You can open with Safari on iPad OS. Not tested on iOS.
  - You can or cannot run on Web browser on Android devices.
    - Not tested.
- - Color picker not react to mouse click.
+   - Works on Tablet device. Display issue on Smartphone device.
+ - ~~Color picker not react to mouse click.~~
  - Extrude operation often fails ~~(more often than desktop build).~~
    - ~~Workaround: Use "Force NURBS" option.~~
    - Set "configuration -> chord tolerance" to "0.1" manually. (maybe "0" is set if you encounter this problem.)
@@ -50,15 +46,11 @@ This build is
    - This resolved by fixing setting store/read code.
  - and more.
 
- - ポインターやタッチの位置が少しずれる場合があります。
- - メインの描画エリアがずれることがあります。
- - ~~ファイルの読み書きができません。(実装されていません。)~~
- - iOSのSafariで開けます~~が、~~
-   - ~~カメラの移動ができません。~~
-   - メニューが開けません。
+ - iPad OSのSafariで動作します。iOSでは不明です。
  - Androidのブラウザでは動くかもしれないし動かないかもしれません。
    - テストされていません。
- - カラーピッカーがマウスのクリックに反応しません。
+   - タブレットデバイスではあまり発生しませんが、スマートフォンデバイスでは描画のずれが著しいです。
+ - ~~カラーピッカーがマウスのクリックに反応しません。~~
  - 押し出し操作は頻繁に失敗します。
    - ~~回避策: Force NURBSオプションを使用してください。~~
    - "configuration -> chord tolerance" を 0.1 に**手動で**設定してください。（この問題に遭遇した場合、おそらく "0" になっていると思います。）
@@ -69,6 +61,10 @@ This build is
 
 ## History / 公開履歴
 
+ - 2022-08-13
+   - [https://verylowfreq.github.io/experimental-solvespace-on-browser/bin-2022081301/solvespace.html](https://verylowfreq.github.io/experimental-solvespace-on-browser/bin-2022081301/solvespace.html)
+   - [https://github.com/verylowfreq/solvespace/commit/7e9a731445b6be06a7d6db3e0ab0172c10ba027b](https://github.com/verylowfreq/solvespace/commit/7e9a731445b6be06a7d6db3e0ab0172c10ba027b)
+   - FIX: Color picker. ADD: Scroll in property window. IMPROVE: File dialog.
  - 2022-08-08 03
    - [https://verylowfreq.github.io/experimental-solvespace-on-browser/bin-2022080803/solvespace.html](https://verylowfreq.github.io/experimental-solvespace-on-browser/bin-2022080803/solvespace.html)
    - https://github.com/verylowfreq/solvespace/commit/b62c437cc2eb5bb623dbe2d10a7eec2d2fb0c50f
