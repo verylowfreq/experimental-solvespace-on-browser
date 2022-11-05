@@ -60,7 +60,10 @@ This build is
 
 
 ## History / 公開履歴
-
+ - 2022-11-05
+   - [https://verylowfreq.github.io/experimental-solvespace-on-browser/bin-2022110501/solvespace.html](https://verylowfreq.github.io/experimental-solvespace-on-browser/bin-2022110501/solvespace.html)
+   - [https://github.com/verylowfreq/solvespace/commit/c2d7d4a3634589e43994529d0c85ced7e1c83838](https://github.com/verylowfreq/solvespace/commit/c2d7d4a3634589e43994529d0c85ced7e1c83838)
+   - Branch [pr-web-improves](https://github.com/verylowfreq/solvespace/tree/pr-web-improves) for pull-request.
  - 2022-08-13
    - [https://verylowfreq.github.io/experimental-solvespace-on-browser/bin-2022081301/solvespace.html](https://verylowfreq.github.io/experimental-solvespace-on-browser/bin-2022081301/solvespace.html)
    - [https://github.com/verylowfreq/solvespace/commit/7e9a731445b6be06a7d6db3e0ab0172c10ba027b](https://github.com/verylowfreq/solvespace/commit/7e9a731445b6be06a7d6db3e0ab0172c10ba027b)
